@@ -43,16 +43,27 @@ const team = [
 ];
 
 console.log(team);
+
 for( let i = 0; i < team.length; i++ ){
 
   console.log( team[i] );
 
   let singoloOggetto = team[i]
 
+  document.querySelector(".row").innerHTML += `
+        <div class="card" style="width: 18rem;">
+          <img src="assets/img/${singoloOggetto.image}" class="card-img-top" alt="...">
+          <div class="card-body">
+            <h5 class="card-title">${singoloOggetto.name}</h5>
+            <p class="card-text">${singoloOggetto.role}</p>
+          </div>
+        </div>  
+`
 
-   for( let key in singoloOggetto ){
-     console.log(key);
-     console.log( singoloOggetto[key] );
-     document.querySelector(".row").innerHTML += `<p>${singoloOggetto[key]}</p>`
-   }
+//------------------------Milestone 2---------------------//
+  //  for( let key in singoloOggetto ){
+  //    console.log(key);
+  //    console.log( singoloOggetto[key] );
+  //    document.querySelector(".row").innerHTML += `<p>${singoloOggetto[key]}</p>`
+  //  }
 }
