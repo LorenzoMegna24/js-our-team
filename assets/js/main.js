@@ -53,5 +53,6 @@ for( let i = 0; i < team.length; i++ ){
    for( let key in singoloOggetto ){
      console.log(key);
      console.log( singoloOggetto[key] );
+     document.querySelector(".row").innerHTML += `<p>${singoloOggetto[key]}</p>`
    }
 }
