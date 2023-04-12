@@ -43,3 +43,15 @@ const team = [
 ];
 
 console.log(team);
+for( let i = 0; i < team.length; i++ ){
+
+  console.log( team[i] );
+
+  let singoloOggetto = team[i]
+
+
+   for( let key in singoloOggetto ){
+     console.log(key);
+     console.log( singoloOggetto[key] );
+   }
+}
