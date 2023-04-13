@@ -51,13 +51,15 @@ for( let i = 0; i < team.length; i++ ){
   let singoloOggetto = team[i]
 
   document.querySelector(".row").innerHTML += `
-        <div class="card" style="width: 18rem;">
-          <img src="assets/img/${singoloOggetto.image}" class="card-img-top" alt="...">
-          <div class="card-body">
-            <h5 class="card-title">${singoloOggetto.name}</h5>
-            <p class="card-text">${singoloOggetto.role}</p>
-          </div>
-        </div>  
+      <div class="col-4 mb-3 d-flex justify-content-center">
+      <div class="card" style="width: 18rem;">
+        <img src="assets/img/${singoloOggetto.image}" class="card-img-top" alt="...">
+        <div class="card-body text-center">
+          <h5 class="card-title">${singoloOggetto.name}</h5>
+          <p class="card-text">${singoloOggetto.role}</p>
+        </div>
+      </div>  
+      </div>
 `
 
 //------------------------Milestone 2---------------------//
